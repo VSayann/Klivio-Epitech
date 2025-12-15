@@ -3,27 +3,82 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="index.css" />
+	<link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<title>Klivio - Epitech</title>
 </head>
 <body>
-    <nav class="navigation">
-        <img class="logo" alt="" src="ressources/logo.png">
-        <a href="#" class="formation">Les formations</a>
+    <nav id="navbar">
+        <img class="logo" src="ressources/logo.png" alt="Logo">
+        <a href="#section1" class="formation">Les formations</a>
         <div class="recherche">
-      		<div class="recherche-child"></div>
-            <img class="icone" alt="" src="ressources/icone.svg">
-            <div class="rechercher">Rechercher</div>
-    	</div>
-      	<button class="connexion">Connexion</button>
-      	<button class="inscription">Inscription</button>
+            <input placeholder="Rechercher" class="recherche-child" type="text">
+            <img id="icone" src="ressources/icone.svg" alt="Loupe">
+        </div>
+        <div id="connexion">
+            <button class="connexion">Connexion</button>
+            <button class="inscription">Inscription</button>
+        </div>
     </nav>
 
-  	<div id="hero">
-        <h1 id="hero-title">Klivio, l'allié de votre progression</h1>
-        <h2 id="hero-subtitle">Les meilleures formations sur le développement personnel</h2>
-        <button id="hero-button">En savoir plus</button>
-    </div>
-</body>
-</html>
+    <header id="hero">
+        <div id="hero-content">
+            <h1 id="hero-title">Klivio, l’allié de votre progression</h1>
+            <h3 id="hero-subtitle">Les meilleures formations sur le développement personnel</h3>
+            <button id="hero-button">En savoir plus</button>
+        </div>
+    </header>
+
+    <section id="section1">           
+        <div class="title">
+            <h2 class="section1-title">Les formations populaires</h2>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-img"></div>
+                <div class="price-position">
+                    <p class="price">15.99 € <span class="price-before">60 €</span></p>
+                </div>
+                <h2 class="card-title">Parler en public</h2>
+                <h3 class="card-subtitle">Sonia Lefèvre | Coach prise de parole</h3>
+                <img class="star" src="ressources/5etoiles.svg" alt="5 étoiles">
+                <h3 class="card-subtitle">Gagnez en aisance et captez votre auditoire</h3>
+            </div>
+
+            <div class="card">
+                <div class="card-img"></div>
+                <div class="price-position">
+                    <p class="price">15.99 € <span class="price-before">60 €</span></p>
+                </div>
+                <h2 class="card-title">Gérer le stress</h2>
+                <h3 class="card-subtitle">Lucie Garnier | Formatrice</h3>
+                <img class="star" src="ressources/4etoiles.svg" alt="4 étoiles">
+                <h3 class="card-subtitle">Apprenez à rester serein face aux défis</h3>
+            </div>
+
+            <div class="card">
+                <div class="card-img"></div>
+                <div class="price-position">
+                    <p class="price">15.99 € <span class="price-before">60 €</span></p>
+                </div>
+                <h2 class="card-title">Travailler en équipe</h2>
+                <h3 class="card-subtitle">David Moreau | Expert</h3>
+                <img class="star" src="ressources/5etoiles.svg" alt="5 étoiles">
+                <h3 class="card-subtitle">Collaborez efficacement, même à distance</h3>
+            </div>
+
+            <div class="card">
+                <div class="card-img"></div>
+                <div class="price-position">
+                    <p class="price">15.99 € <span class="price-before">60 €</span></p>
+                </div>
+                <h2 class="card-title">Gérer son temps</h2>
+                <h3 class="card-subtitle">Claire Dumas | Coach organisation</h3>
+                <img class="star" src="ressources/4etoiles.svg" alt="4 étoiles">
+                <h3 class="card-subtitle">Optimisez vos journées et gagnez en efficacité</h3>
+            </div>
+        </div>
+        <button class="button-section">Voir plus de formations</button>
+        
+    </section>

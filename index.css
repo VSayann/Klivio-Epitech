@@ -1,19 +1,111 @@
 * {
-	font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    color: #152237;
     margin: 0;
     padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#navbar {
+    width: 100%;
+    height: 80px;
+    background-color: #152237;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 84px;
+}
+
+#connexion {
+    display: flex;
+    gap: 5%
+}
+
+.connexion {
+    color: #152237;
+    font-size: 15px;
+    width: 130px;
+    height: 40px;
+    border: 0px none;
+    border-radius: 6px;
+    background: #FFF;
+}
+
+.inscription {
+    color: #152237;
+    font-size: 15px;
+    background-image: linear-gradient(to right, #44DD8A, #15B7E2);
+    width: 130px;
+    height: 40px;
+    border: 0px none;
+    border-radius: 6px;
+}
+
+.recherche{
+    position: relative;
+    width: 30%;
+}
+
+.recherche-child {
+    width: 100%;
+    height: 40px;
+    background-color: #152237;
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 6px;
+    padding-left: 17px;
+    font-size: 15px;
+    flex-grow: 1;
+}
+
+.recherche-child::placeholder {
+    color: white;
+    font-size: 15px; 
+}
+
+#icone {
+    width: 24px;
+    position: absolute;
+    right: 0;
+    top: 24%;
+}
+
+.formation {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
 }
 
 #hero {
     position: relative;
     width: 100%;
-    height: 480px;
+    height: 540px;
     background: linear-gradient(to right, #44DD8A, #15B7E2);
+    overflow: hidden; 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0;
+    box-sizing: border-box;
+    
 }
 
 #hero::before {
@@ -24,116 +116,169 @@
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.3;
+    z-index: 0;
 }
 
 #hero > * {
+    position: relative;
     z-index: 1;
 }
 
-#hero-button {
-    width: 130px;
-    height: 40px;
-    border-radius: 6px;
-    background: #FFF;
-    border: none;
-    font-size: 15px;
-}
 
 #hero-title {
     color: #152237;
-    text-align: center;
     font-size: 48px;
     font-weight: 800;
-    font-style: "ExtraBold";
+    margin: 0;
+    padding: 0;
+    text-align: center;
     text-transform: uppercase;
 }
 
 #hero-subtitle {
-    color: #000;
-    text-align: center;
+    color: #152237;
     font-size: 20px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    margin: 0;
+    text-align: center;
     text-transform: uppercase;
 }
 
-.navigation {
-  	width: 100%;
-  	height: 80px;
-  	position: relative;
-  	background-color: #152237;
-  	overflow: hidden;
+#hero-content {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-direction: column;
+    align-items: center;
 }
 
-.inscription {
-  	position: absolute;
-  	top: 20px;
-  	left: 1449px;
-  	border-radius: 6px;
-  	background: linear-gradient(95.98deg, #44dd8a, #15b7e2);
-  	width: 130px;
-  	height: 40px;
+#hero-button {
+    color: v#152237;
     font-size: 15px;
-    border: none;
+    width: 130px;
+    height: 40px;
+    border: 0px none;
+    border-radius: 6px;
+    font-weight: 500px;
+    background: #FFF;
 }
 
-.connexion {
-  	position: absolute;
-  	top: 20px;
-  	left: 1300px;
-  	border-radius: 6px;
-  	background-color: #fff;
-  	width: 130px;
-  	height: 40px;
+#section1 {
+    height: auto;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.title {
+    width: 93%;
+    display: flex;
+
+}
+
+.section1-title {
+    color: #152237;
+    font-weight: 800;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 1.5%;
+    box-sizing: border-box;
+    
+}
+
+.card-padding {
+    padding: 10px;
+}
+
+.card {
+    height: 365px;
+    width: 21%;
+    min-width: 305px;
+    max-width: 1000px;
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+    gap: 20px;
+}
+
+.card-img {
+    background-color: #44DD8A;
+    height: 216px;
+    width: 110%;
+    margin-left: -10px;
+    margin-top: -10px;
+    pointer-events: none;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 28px;
+}
+
+.card-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.price-position {
+    position: absolute;
+    top: 52%;
+    right: 10px;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 120px;
+    height: 31px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #152237;
+    border-radius: 93px;
+    color: #FFF;
+    gap: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 3px 3px 10px;
+}
+
+.price-before {
+    font-size: 10px;
+    font-weight: 400;
+    color: #FFF;
+    text-decoration: line-through;
+}
+
+.star-lines {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.button-section {
+    color: #FFF;
+    background-color: #152237;
     font-size: 15px;
-    border: none;
+    font-weight: 500;
+    width: 225px;
+    height: 40px;
+    border: 0px none;
+    border-radius: 6px;
 }
-
-.recherche {
-  	position: absolute;
-  	height: 40px;
-  	width: 477px;
-  	top: 20px;
-  	left: 603px;
-  	color: #fff;
-}
-
-.recherche-child {
-  	position: absolute;
-  	height: 100%;
-  	width: 100%;
-  	border-radius: 6px;
-  	border: 1px solid #fff;
-}
-
-.icone {
-  	position: absolute;
-  	top: 20%;
-  	right: 2.11%;
-  	bottom: 20%;
-}
-
-.rechercher {
-  	position: absolute;
-  	width: 90px;
-  	top: 27.5%;
-  	left: 3.56%;
-}
-
-.formation {
-    text-decoration: none;
-  	position: absolute;
-  	top: 31px;
-  	left: 350px;
-  	color: #fff;
-}
-
-.logo {
-  	position: absolute;
-  	top: 25px;
-  	left: 98px;
-  	width: 84px;
-  	height: 31px;
-}
-
