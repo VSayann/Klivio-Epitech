@@ -602,3 +602,25 @@ body {
     margin-top: 50px;
 }
 
+#separator {
+    width: 100%;
+    height: 18px;
+    background-image: linear-gradient(to right, #44DD8A, #15B7E2);
+}
+
+#footer {
+    width: 100%;
+    height: 489px;
+    background-color: #152237;
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+#footer-logo {
+    width: 243px;
+    height: 87px;
+}
