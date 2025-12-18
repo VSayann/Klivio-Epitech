@@ -112,7 +112,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url("ressources/bg-header.png");
+    background-image: url("../ressources/bg-header.png");
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.3;
