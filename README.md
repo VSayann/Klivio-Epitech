@@ -34,6 +34,6 @@ Dans le cadre de ma formation, notre premier projet Epitech, il nous a été dem
 - ```tailwind.config.js``` personnalisable
 - Liberté artistique totale
 
-Crédits:
+Crédits: \
 Sayann Valmond - Étudiant chez Epitech Lille\
 [GitHub](https://github.com/VSayann) / [Linkedin](https://www.linkedin.com/in/sayann-valmond/) / [Porfolio](https://ideal-adventure-2e7z2kw.pages.github.io)
