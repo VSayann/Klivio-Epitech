@@ -2,7 +2,7 @@
 *08/12/2025 - 21/12/2025*
 
 ## Démos GitHub Pages :
-[Lien GitHub Pages de la version HTML/CSS](https://vsayann.github.io/Klivio-Epitech/html-css/index.html)
+[Lien GitHub Pages de la version HTML/CSS](https://vsayann.github.io/Klivio-Epitech/html-css/index.html)\
 [Lien GitHub Pages de la version Tailwind](https://vsayann.github.io/Klivio-Epitech/tailwind/index.html)
 
 ## Contexte
@@ -35,5 +35,5 @@ Dans le cadre de ma formation, notre premier projet Epitech, il nous a été dem
 - Liberté artistique totale
 
 ###### Crédits:
-Sayann Valmond - Étudiant chez Epitech Lille
+######Sayann Valmond - Étudiant chez Epitech Lille\
 [GitHub](https://github.com/VSayann) / [Linkedin](https://www.linkedin.com/in/sayann-valmond/) / [Porfolio](https://ideal-adventure-2e7z2kw.pages.github.io)
